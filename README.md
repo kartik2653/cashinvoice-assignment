@@ -584,21 +584,6 @@ The API returns standard HTTP status codes and error messages in JSON format.
 - **JWT Tokens**: Tokens expire after 24 hours
 - **API Authentication**: All `/api/*` endpoints require valid JWT tokens
 - **Role-Based Access**: Only admins can see all users' todos
-- **Ownership**: Users can only modify their own todos (unless admin)
+- **Ownership**: Users can only modify/delete their own todos
 - **Environment Variables**: Keep `JWT_SECRET` and `DB_PASSWORD` secure
 
----
-
-## 📝 License
-
-This project is part of the CashInvoice assignment.
-
----
-
-## 🤝 Support
-
-For issues or questions, please contact the development team.
-
----
-
-**Last Updated**: January 22, 2026
