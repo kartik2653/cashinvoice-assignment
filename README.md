@@ -358,7 +358,7 @@ GET /api/todos?page=3&status=completed
 }
 ```
 
-**Admin Access**: Admins see all todos from all users (when `role: "admin"`).
+**Admin Access**: Admins see all todos from all users.
 
 ---
 
@@ -404,7 +404,7 @@ Content-Type: application/json
   "error": "forbidden"
 }
 ```
-(Only the todo owner can update their todos, except admins)
+(Only the todo owner can update their todos)
 
 ---
 
@@ -430,7 +430,7 @@ Empty response body indicates successful deletion.
   "error": "forbidden"
 }
 ```
-(Only the todo owner can delete their todos, except admins)
+(Only the todo owner can delete their todos)
 
 ---
 
@@ -568,7 +568,7 @@ The API returns standard HTTP status codes and error messages in JSON format.
 | `invalid token` | Token is expired or malformed | Login again to get a fresh token |
 | `invalid credentials` | Wrong email or password | Check your email and password |
 | `user already exists` | Email is already registered | Use a different email or login |
-| `forbidden` | Trying to modify another user's todo | Only owners or admins can modify todos |
+| `forbidden` | Trying to modify another user's todo | Only owners can modify todos |
 | `invalid status` | Invalid status value provided | Use: pending, in_progress, or completed |
 
 ---
