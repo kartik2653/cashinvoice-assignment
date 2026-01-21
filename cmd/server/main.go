@@ -11,9 +11,11 @@ import (
 	"cashinvoice-assignment/internal/utils"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	_ = godotenv.Load()
 	cfg := config.Load()
 
 	database.Connect(cfg)
