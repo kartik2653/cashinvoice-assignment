@@ -106,14 +106,9 @@ cashinvoice-assignment/
    go get ./...
    ```
 
-3. **Set up PostgreSQL database**
-   ```bash
-   createdb cashinvoice_db
-   ```
+3. **Configure environment variables** (see Configuration section)
 
-4. **Configure environment variables** (see Configuration section)
-
-5. **Run the application**
+4. **Run the application**
    ```bash
    go run cmd/server/main.go
    ```
