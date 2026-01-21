@@ -154,7 +154,7 @@ JWT_SECRET=your-secret-key-here
 AUTO_COMPLETE_DELAY=10
 ```
 
-### Configuration Details
+### Configuration Details(Dummy Values)
 
 | Variable | Default | Description |
 |----------|---------|-------------|
